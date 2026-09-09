@@ -14,15 +14,17 @@
 | 官网 | https://xumuge.com |
 | 许可 | [AGPL-3.0](./LICENSE) · [NOTICE](./NOTICE) |
 | 免责声明 | [DISCLAIMER.md](./DISCLAIMER.md) |
-| **Windows 安装包** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe)（Gitee 直链） |
+| **Windows 安装包** | [Gitee](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) · [GitHub](https://github.com/aizaishenqiu/xumuge/releases/download/virmoor-desktop-1.0.2/Virmoor_1.0.2_x64-setup.exe) |
+| 源码仓库 | [Gitee](https://gitee.com/jiukakeji/xumuge) · [GitHub](https://github.com/aizaishenqiu/xumuge) |
 
 ### 下载安装（Windows）
 
-开源预览安装包（Gitee Release 直链）：
+开源预览安装包直链：
 
 | 项目 | 链接 |
 |------|------|
-| **安装包直链** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) |
+| **Gitee** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) |
+| **GitHub** | [Virmoor_1.0.2_x64-setup.exe](https://github.com/aizaishenqiu/xumuge/releases/download/virmoor-desktop-1.0.2/Virmoor_1.0.2_x64-setup.exe) |
 
 > 该安装包为开源预览构建，可能未做商业代码签名；Windows 可能提示未知发布者，属预期现象。亦可对照官网 https://xumuge.com 。
 

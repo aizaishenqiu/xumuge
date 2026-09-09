@@ -9,7 +9,11 @@
 
 **社区 QQ 交流群：`1102740387`**（加群请注明：开源 / Virmoor）
 
-**下载安装包：** [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe)（Gitee 直链）
+**仓库 / Repos：** [Gitee](https://gitee.com/jiukakeji/xumuge) · [GitHub](https://github.com/aizaishenqiu/xumuge)
+
+**下载安装包：**  
+- [Gitee · 虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe)  
+- [GitHub · Virmoor_1.0.2_x64-setup.exe](https://github.com/aizaishenqiu/xumuge/releases/download/virmoor-desktop-1.0.2/Virmoor_1.0.2_x64-setup.exe)
 
 **使用范围：** 个人使用不受限制；**禁止**未经授权的商用 SaaS / 付费托管等运营。详见 [README.zh-CN.md](./README.zh-CN.md#使用范围附加约定) · [README.en.md](./README.en.md#use-policy-additional-terms)
 
@@ -29,4 +33,5 @@
 | [LICENSE](./LICENSE) | AGPL-3.0 |
 
 Gitee Wiki：https://gitee.com/jiukakeji/xumuge/wikis  
+GitHub：https://github.com/aizaishenqiu/xumuge  
 **QQ 群：`1102740387`**
