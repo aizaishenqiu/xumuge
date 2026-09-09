@@ -33,5 +33,6 @@
 | [LICENSE](./LICENSE) | AGPL-3.0 |
 
 Gitee Wiki：https://gitee.com/jiukakeji/xumuge/wikis  
-GitHub：https://github.com/aizaishenqiu/xumuge  
+GitHub 开发文档（仓库内）：https://github.com/aizaishenqiu/xumuge/tree/main/wiki  
+GitHub Wiki 页：需仓库 Owner 登录后打开 https://github.com/aizaishenqiu/xumuge/wiki 点一次 **Create the first page**，随后可执行 `node scripts/push-github-wiki.mjs` 同步。  
 **QQ 群：`1102740387`**
