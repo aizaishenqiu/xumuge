@@ -34,7 +34,7 @@
 
 ### 许可
 
-本目录 Skill 正文随 `opensource/` 按 **AGPL-3.0** 发布。主演示岗包见 `../xu-desktop/role-packs-src/zh-virmoon`。商业正式岗包仍闭源，见 [OPEN_SOURCE.md](../OPEN_SOURCE.md)。
+本目录 Skill 正文随 `opensource/` 按 **AGPL-3.0** 发布。主演示岗包见 `../xu-desktop/role-packs-src/zh-virmoon`。详见 [OPEN_SOURCE.md](../OPEN_SOURCE.md)。
 
 ---
 
@@ -52,4 +52,4 @@ Copy a skill folder (with `SKILL.md`) into the app’s user-skills directory, or
 
 ### License
 
-**AGPL-3.0** with the rest of this staging tree. Primary demo roles: `../xu-desktop/role-packs-src/zh-virmoon`. Commercial packs remain closed — see [OPEN_SOURCE.md](../OPEN_SOURCE.md).
+**AGPL-3.0** with the rest of this staging tree. Primary demo roles: `../xu-desktop/role-packs-src/zh-virmoon`. See [OPEN_SOURCE.md](../OPEN_SOURCE.md).

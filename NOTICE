@@ -32,14 +32,8 @@ AGPL-3.0 does **not** grant trademark rights.
 What is open here
 -----------------
 - Desktop runtime sources under `xu-desktop/` (allowlisted export)
-- Demo role Markdown: `xu-desktop/role-packs-src/zh-virmoon` (~461 non-market roles)
+- Demo role Markdown: `xu-desktop/role-packs-src/zh-virmoon` (~461 roles)
 - Short `demo-skills/` Skill samples
 - Bilingual notices and developer docs in this directory
-
-Still reserved / closed
------------------------
-Commercial `zh-CN-virmoor` role trees, market-origin roles, production secrets,
-code-signing certificates, the official website, and Go API / admin backends
-are **not** part of this open-source tree.
 
 Third-party notices for dependencies appear in the respective source trees.

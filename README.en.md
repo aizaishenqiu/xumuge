@@ -21,19 +21,13 @@ Website: https://xumuge.com
 
 ---
 
-## 1. Open Source Boundary
+## 1. What this repository includes
 
 This repository open-sources the Virmoor **desktop client** (**AGPL-3.0**): UI, three-gate engine, file approval, workspaces, office, agency UI, voice, connectors, plus demo roles:
 
-- `xu-desktop/role-packs-src/zh-virmoon` (~**461** non-market roles)
+- `xu-desktop/role-packs-src/zh-virmoon` (~**461** roles)
 
-**Still closed / separately licensed:**
-
-- Full commercial trees (e.g. `zh-CN-virmoor`), market roles, commercial `.xupack`  
-- Account / licensing backends, private vectors / ops data  
-- Website, admin consoles, commercial `.foubiz` plugins  
-
-After building you can use gates, write approvals, the demo pack, and most UI locally. Cloud login, updates, and full store need your own or official APIs (`xu-desktop/.env.example` uses `xxx.com` placeholders).
+After building you can use gates, write approvals, the demo pack, and most UI locally. Cloud login and updates can be configured via `.env` (`xu-desktop/.env.example` uses `xxx.com` placeholders).
 
 ### Use policy (additional terms)
 
@@ -116,8 +110,8 @@ Recommended flow: **Inquiry → Plan → Agent**. Do not skip Plan before file c
 
 ### 3.8 Agency & packs
 
-- Role browser (~**461** open demo roles in `zh-virmoon`)  
-- `.xupack` install/import (commercial full packs not in this repo)  
+- Role browser (~**461** demo roles in `zh-virmoon`)  
+- `.xupack` install/import  
 - Custom roles / user `SKILL.md`  
 
 ### 3.9 Memory, MCP, connections
@@ -128,7 +122,7 @@ Recommended flow: **Inquiry → Plan → Agent**. Do not skip Plan before file c
 
 ### 3.10 Settings & more
 
-Company branding, brains, billing, concurrency, guardrails, privacy, security audit, license, shortcuts, personal center, legal; capability packs (`.xucap`), commercial plugins (`.foubiz`), semi-auto leads notes.
+Company branding, brains, billing, concurrency, guardrails, privacy, security audit, license, shortcuts, personal center, legal; capability packs, user skills, semi-auto leads notes.
 
 ---
 
