@@ -35,7 +35,13 @@ This repository open-sources the Virmoor **desktop client** (**AGPL-3.0**): UI, 
 
 After building you can use gates, write approvals, the demo pack, and most UI locally. Cloud login, updates, and full store need your own or official APIs (`xu-desktop/.env.example` uses `xxx.com` placeholders).
 
-See [OPEN_SOURCE.md](./OPEN_SOURCE.md), [ALLOWLIST.md](./ALLOWLIST.md), [EXCLUSIONS.md](./EXCLUSIONS.md).
+### Use policy (additional terms)
+
+- **Personal use is unrestricted:** learning, research, and local non-commercial self-use are allowed under AGPL-3.0 (obtain, build, modify).  
+- **No commercial SaaS-style hosting:** without prior written permission from the rights holder, you **must not** operate this software (including modified versions) as a commercial multi-tenant / public-cloud SaaS, paid hosted service, or any subscription/seat business that resells Virmoor’s core capabilities online.  
+- For private on-prem enterprise deploy, commercial redistribution, or OEM, contact the website or QQ group for a commercial license.  
+
+See [OPEN_SOURCE.md](./OPEN_SOURCE.md), [ALLOWLIST.md](./ALLOWLIST.md), [EXCLUSIONS.md](./EXCLUSIONS.md), [NOTICE](./NOTICE).
 
 > **Important:** Early preview — **not** for production. Read [DISCLAIMER.md](./DISCLAIMER.md).
 

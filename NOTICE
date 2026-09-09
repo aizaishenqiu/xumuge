@@ -8,9 +8,21 @@ License
 This open-source staging tree is licensed under the GNU Affero General Public
 License version 3 (AGPL-3.0). See LICENSE.
 
+Additional use policy (project terms)
+-------------------------------------
+Personal, non-commercial self-use is unrestricted under AGPL-3.0.
+Without prior written permission from the rights holder, you must NOT operate
+this software (including modified versions) as a commercial multi-tenant /
+public-cloud SaaS, paid hosted service, or subscription/seat business that
+resells Virmoor’s core capabilities online.
+For enterprise on-prem, OEM, or commercial redistribution, contact
+https://xumuge.com or QQ group 1102740387.
+
 If you modify the Program and convey it (including offering the modified
 Program as a service over a network), AGPL-3.0 requires you to provide the
 Corresponding Source to users interacting with it remotely (see AGPL §13).
+The additional SaaS commercial-hosting restriction above still applies unless
+you obtain a separate commercial license.
 
 Trademarks
 ----------

@@ -35,7 +35,13 @@
 
 自编译后可本地使用三闸门、写盘审批、演示岗包与大部分 UI；云登录、检查更新、完整商店等需配置自建或官方 API（见 `xu-desktop/.env.example`，占位域名为 `xxx.com`）。
 
-详见：[OPEN_SOURCE.md](./OPEN_SOURCE.md) · [ALLOWLIST.md](./ALLOWLIST.md) · [EXCLUSIONS.md](./EXCLUSIONS.md)
+### 使用范围（附加约定）
+
+- **个人使用不受限制**：个人学习、研究、本机自用、非营利自用，可按 AGPL-3.0 获取、编译与修改本仓库代码。  
+- **禁止商用架设 SaaS 等类型**：未经权利人书面授权，**禁止**将本软件（含修改版）用于商业化多租户 / 公有云 SaaS、对外付费托管、商业化在线服务平台，或其它以本软件核心能力对外售卖订阅/席位的运营形态。  
+- 企业内网私有部署、商业分发、OEM 等需求，请联系官网或 QQ 群沟通商业授权。  
+
+详见：[OPEN_SOURCE.md](./OPEN_SOURCE.md) · [ALLOWLIST.md](./ALLOWLIST.md) · [EXCLUSIONS.md](./EXCLUSIONS.md) · [NOTICE](./NOTICE)
 
 > **重要：** 早期预览版，可能存在功能异常与未知 Bug，**不建议直接用于生产**。请先阅读 [DISCLAIMER.md](./DISCLAIMER.md)。
 

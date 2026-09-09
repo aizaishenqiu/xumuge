@@ -18,6 +18,15 @@ Virmoor / 虚募阁 · bilingual · 中英对照
 
 一句话：**开源的是「能跑起来的软件 + 约 461 演示岗位」；不卖、不公开的是「商业正式岗包与生产钥匙」。**
 
+### 1.1 使用范围（附加约定）
+
+| 允许 | 禁止（未经书面授权） |
+|------|----------------------|
+| **个人使用不受限制**（学习、研究、本机自用、非营利自用） | **商用架设 SaaS**、公有云多租户、对外付费托管、以本软件核心能力售卖订阅/席位的在线服务 |
+| 按 AGPL-3.0 获取、编译、修改与再分发源码（须遵守 AGPL） | 将本仓库当作「可免费商用 SaaS 底座」对外运营 |
+
+企业内网私有部署、OEM、商业分发请走商业授权（官网或 QQ 群 **1102740387**）。
+
 ### 2. 为什么是 461 而不是全量
 
 - 私有源 `zh-kimi` 磁盘上约 1222（开源目录名为 `zh-virmoon`） 岗（含 market ≈761）。  
@@ -51,4 +60,6 @@ Virmoor / 虚募阁 · bilingual · 中英对照
 
 Software + ~461 non-market `zh-virmoon` demo roles: **AGPL-3.0**. Commercial `zh-CN-virmoor`, market roles, secrets, website/backends: **closed**.
 
-QQ group: **1102740387**. See DEVELOPING.md / USAGE.md.
+**Use policy:** personal use unrestricted; **no** unauthorized commercial SaaS / paid hosted multi-tenant operation. Contact website or QQ **1102740387** for commercial license.
+
+QQ group: **1102740387**. See DEVELOPING.md / USAGE.md / README.en.md.

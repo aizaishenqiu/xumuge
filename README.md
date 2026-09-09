@@ -9,6 +9,8 @@
 
 **社区 QQ 交流群：`1102740387`**（加群请注明：开源 / Virmoor）
 
+**使用范围：** 个人使用不受限制；**禁止**未经授权的商用 SaaS / 付费托管等运营。详见 [README.zh-CN.md](./README.zh-CN.md#使用范围附加约定) · [README.en.md](./README.en.md#use-policy-additional-terms)
+
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![status](https://img.shields.io/badge/status-early--preview-orange)](DISCLAIMER.md)
 [![QQ Group](https://img.shields.io/badge/QQ-1102740387-12B7F5)](./README.zh-CN.md#社区与联系)
