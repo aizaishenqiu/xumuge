@@ -1,0 +1,10 @@
+{
+  "dataPolicy": "private-full",
+  "description": "Gitee 仓 yjk100_admin/ai-smart-warehouse（本仓唯一允许远程）：允许岗位源、xupack、docs、许可证数据等完整入库",
+  "primaryRemote": "https://gitee.com/yjk100_admin/ai-smart-warehouse.git",
+  "requireExplicitPushApproval": true,
+  "notes": [
+    "禁止自动 push 到 github.com 或其它非 primaryRemote 仓库",
+    "换公开仓前必须 dataPolicy=public-oss，并恢复 .gitignore 对 docs/、role-packs-src、xupack、许可证与密钥的拦截"
+  ]
+}

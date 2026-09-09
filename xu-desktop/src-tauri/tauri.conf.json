@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "虚募阁",
+  "version": "1.0.2",
+  "identifier": "com.xu.desktop",
+  "build": {
+    "beforeDevCommand": "node scripts/ensure-dev-role-pack.mjs && npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist",
+    "features": ["native-tts"]
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "虚募阁",
+        "width": 600,
+        "height": 350,
+        "minWidth": 600,
+        "minHeight": 350,
+        "decorations": false,
+        "titleBarStyle": "Overlay",
+        "hiddenTitle": true,
+        "transparent": false,
+        "backgroundColor": "#12161a",
+        "resizable": true,
+        "center": true,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self' http://127.0.0.1:* http://localhost:*; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://127.0.0.1:* http://localhost:*; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com http://127.0.0.1:* http://localhost:*; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' asset: http://asset.localhost blob: data: http://127.0.0.1:* http://localhost:*; connect-src 'self' ipc: http://ipc.localhost https://ipc.localhost http: https: ws: wss:; frame-src 'self' http://127.0.0.1:* http://localhost:*; worker-src 'self' blob:; media-src 'self' blob: data: asset: http://asset.localhost https://asset.localhost http://127.0.0.1:* http://localhost:*; object-src 'none'; base-uri 'self'; form-action 'self'",
+      "assetProtocol": {
+        "enable": true,
+        "scope": [
+          "$APPDATA/com.xu.desktop/tauri-plugin-screenshots/**",
+          "$TEMP/xu-voice/**",
+          "$LOCALAPPDATA/Temp/xu-voice/**",
+          "$TMP/xu-voice/**"
+        ]
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "licenseFile": "windows/installer-license.txt",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "../resources/role-packs/full.zh-CN.xupack": "role-packs/full.zh-CN.xupack",
+      "../tools/feishu-ws": "feishu-ws",
+      "../tools/wecom-kf": "wecom-kf",
+      "../tools/design-mcp-bridge": "design-mcp-bridge",
+      "../tools/mcp-blender-host": "mcp-blender-host",
+      "../tools/mcp-max-host": "mcp-max-host",
+      "../tools/cursor-sdk-bridge": "cursor-sdk-bridge",
+      "bin/rg.exe": "bin/rg.exe"
+    },
+    "windows": {
+      "nsis": {
+        "languages": ["SimpChinese"],
+        "displayLanguageSelector": false,
+        "installMode": "both",
+        "installerIcon": "icons/icon.ico",
+        "uninstallerIcon": "icons/icon.ico",
+        "startMenuFolder": "虚募阁"
+      }
+    },
+    "macOS": {
+      "infoPlist": "Info.plist"
+    }
+  }
+}

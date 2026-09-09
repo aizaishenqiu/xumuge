@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "seedId": "xu-voice-route",
+  "tools": [
+    {
+      "toolName": "voice_set_tone",
+      "whenToUse": "用户或角色要求夹子音/卖萌/生气等戏剧语气，或切换御姐萝莉等产品语气时。",
+      "steps": [
+        "voice_route_probe 查看 Sherpa/Cosy 就绪",
+        "voice_set_tone tone_id=female-jiazi（夹子音）等；requiresCosy 语气会路由 Cosy",
+        "若 Cosy 未就绪：引导设置页本地安装 / DashScope Key / 自建 URL，勿闲聊代替下载",
+        "临时角色音色描述用 voice_set_cosy_instruct",
+        "voice_clear_override 恢复默认"
+      ],
+      "forbid": [
+        "用员工闲聊代替 voice_native_install / cosyvoice_install",
+        "假称已出夹子音但 Cosy 未就绪",
+        "把夹子音写成架子音"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+/**
+ * 虚募阁桌面 qiu- 补丁样式（勿改 index.css / foucui 既有 UI 规则）
+ */
+
+/* ── 页脚作者 + 主内容区 flex ── */
+.page-area-main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.qiu-page-author {
+  flex-shrink: 0;
+}
+
+/* ── 顶栏左右色阶一致（首页 + IDE 共用） ── */
+.qiu-app-titlebar {
+  background: var(--chrome-bar, var(--surface-soft)) !important;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.qiu-app-titlebar .qiu-app-titlebar-actions,
+.qiu-app-titlebar .qiu-app-titlebar-winctl {
+  background: var(--chrome-bar, var(--surface-soft));
+  align-self: stretch;
+}
+
+[data-theme="ink"] .qiu-app-titlebar .fou-button.fou-button--default,
+[data-theme="ink"] .qiu-app-titlebar .fou-button.fou-button--text {
+  background: transparent !important;
+  border-color: transparent !important;
+  color: var(--body) !important;
+}
+
+[data-theme="ink"] .qiu-app-titlebar .fou-button.fou-button--default:hover,
+[data-theme="ink"] .qiu-app-titlebar .fou-button.fou-button--text:hover,
+.qiu-app-titlebar .app-window-controls .fou-button:hover {
+  background: color-mix(in srgb, var(--surface-card) 38%, var(--chrome-bar, var(--surface-soft))) !important;
+  color: var(--ink) !important;
+}
+
+.qiu-app-titlebar .app-window-controls .fou-button.close:hover {
+  background: #e81123 !important;
+  color: #fff !important;
+}
+
+/* 顶栏/侧栏可点击区域禁止 drag，避免 Tauri 窗口拖拽吞点击 */
+.qiu-app-titlebar .fou-button,
+.qiu-app-titlebar button,
+.qiu-app-titlebar .app-titlebar-menu-item,
+.qiu-titlebar-no-drag {
+  -webkit-app-region: no-drag !important;
+}
+
+.navbar {
+  position: relative;
+  z-index: 100;
+}
+
+.navbar,
+.navbar-inner,
+.navbar :deep(.fou-button) {
+  pointer-events: auto !important;
+  -webkit-app-region: no-drag !important;
+}
+
+.page-area {
+  position: relative;
+  z-index: 1;
+}
+
+/* 设置页左侧分组导航 */
+.fou-settings .settings-layout {
+  position: relative;
+}
+
+.fou-settings .settings-nav {
+  position: relative;
+  z-index: 4;
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.fou-settings .settings-nav .qiu-settings-nav-item,
+.fou-settings .settings-nav :deep(.fou-button) {
+  pointer-events: auto !important;
+  -webkit-app-region: no-drag !important;
+  cursor: pointer;
+}
+
+.fou-settings .settings-main {
+  position: relative;
+  z-index: 1;
+}
+
+.qiu-app-titlebar .app-titlebar-menu-btn,
+.qiu-app-titlebar .app-titlebar-menu-item {
+  -webkit-app-region: no-drag !important;
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.composer-footer,
+.composer-footer :deep(.fou-button),
+.composer-footer button,
+.chat-project-bar :deep(.fou-button),
+.home-task-header :deep(.fou-button),
+.navbar :deep(.fou-button) {
+  pointer-events: auto !important;
+}
+
+.composer-footer {
+  position: relative;
+  z-index: 5;
+}
+
+.chat-project-bar {
+  position: relative;
+  z-index: 3;
+}
+
+.home-task-header {
+  position: relative;
+  z-index: 3;
+}
+
+/* FouDialog 关闭后遗留的全屏 root 不应挡点击 */
+body > .fou-dialog-root[style*="display: none"],
+body > .fou-popover-root[style*="display: none"],
+body > .fou-popconfirm-root[style*="display: none"],
+body > .fou-msgbox-root[style*="display: none"] {
+  pointer-events: none !important;
+}
+
+/* 通话全屏层 z-index:9800；fouAlert 默认 5000 会被挡住，抬到与业务弹窗同档 */
+body > .fou-msgbox-root {
+  z-index: 21000 !important;
+}
+
+/* 应用壳层始终可接收点击（防止 body 样式被锁死） */
+#root,
+.app-shell,
+.app-body,
+.page-area,
+.qiu-app-titlebar,
+.navbar {
+  pointer-events: auto !important;
+}
+
+[data-theme="ink"] .navbar :deep(.navbar-item.fou-button.active) {
+  background: color-mix(in srgb, var(--primary) 28%, var(--surface-card)) !important;
+  color: var(--body-strong) !important;
+}
+
+[data-theme="ink"] .navbar-avatar {
+  background: color-mix(in srgb, var(--primary) 35%, var(--surface-card));
+  color: #fff;
+  border: 1px solid color-mix(in srgb, var(--primary) 55%, var(--hairline));
+}
+
+/* ── 墨夜：FouSelect 下拉可读 ── */
+[data-theme="ink"] .qiu-billing-root .fou-select__selected {
+  color: var(--body-strong);
+}
+
+[data-theme="ink"] .fou-select__dropdown {
+  background: var(--surface-card) !important;
+  border: 1px solid var(--hairline) !important;
+  box-shadow: var(--shadow-lg);
+  color: var(--body-strong) !important;
+}
+
+[data-theme="ink"] .fou-select__dropdown .fou-option,
+[data-theme="ink"] .fou-select__dropdown .fou-select__option {
+  color: var(--body) !important;
+}
+
+[data-theme="ink"] .fou-select__dropdown .fou-option:hover,
+[data-theme="ink"] .fou-select__dropdown .fou-select__option:hover,
+[data-theme="ink"] .fou-select__dropdown .fou-option.is-selected,
+[data-theme="ink"] .fou-select__dropdown .fou-select__option.is-selected {
+  background: color-mix(in srgb, var(--primary) 16%, var(--surface-card)) !important;
+  color: var(--body-strong) !important;
+}
+
+/* ── 账单区 ── */
+.qiu-billing-root {
+  overflow: visible;
+}
+
+.qiu-billing-root .qiu-billing-chart {
+  overflow: hidden;
+}
+
+.qiu-billing-chart-wrap .qiu-billing-chart {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.settings-embedded .qiu-billing-root {
+  padding-bottom: 16px;
+}
+
+.qiu-billing-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.qiu-billing-toolbar .fou-date {
+  min-width: 260px;
+}
+
+/* ── 对话输入框 ── */
+.qiu-composer-shell {
+  overflow: visible !important;
+  padding-bottom: 12px !important;
+  box-sizing: border-box;
+}
+
+.chat-center .qiu-composer-shell,
+.home-agent-pane .qiu-composer-shell,
+.code-center .qiu-composer-shell,
+.ide-chat-panel .qiu-composer-shell {
+  overflow: visible !important;
+}
+
+.qiu-composer-shell .composer-resize-handle {
+  border-top-color: transparent;
+  margin-bottom: 4px;
+}
+
+.qiu-composer-shell .qiu-composer-input {
+  box-sizing: border-box;
+  border: 1px solid var(--hairline) !important;
+  background: var(--canvas);
+  color: var(--body);
+  box-shadow: none;
+}
+
+.qiu-composer-shell .qiu-composer-input:focus {
+  border-color: color-mix(in srgb, var(--primary) 55%, var(--hairline)) !important;
+  outline: none;
+}
+
+/* ── 输入框右键菜单 ── */
+.qiu-composer-ctx-menu {
+  position: fixed;
+  z-index: 28000;
+  min-width: 168px;
+  padding: 4px;
+  background: var(--surface-card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius, 8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.qiu-composer-ctx-menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--body);
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.qiu-composer-ctx-menu button:hover:not(:disabled) {
+  background: var(--primary-glow);
+  color: var(--body-strong);
+}
+
+.qiu-composer-ctx-menu button:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.qiu-composer-ctx-sep {
+  height: 1px;
+  margin: 4px 6px;
+  background: var(--hairline);
+}

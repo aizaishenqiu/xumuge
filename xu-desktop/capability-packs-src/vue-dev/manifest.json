@@ -1,0 +1,10 @@
+{
+  "id": "vue-dev",
+  "name": "Vue 开发",
+  "description": "Vue 3 + SFC + foucui 组件规范提示",
+  "version": "1.0.0",
+  "agentToolHints": "【Vue 能力包】使用 Vue 3 Composition API + <script setup>。UI 组件统一用 foucui（FouButton/FouDialog/FouInput 等）；所有按钮必须带 icon。样式用 scoped + CSS 变量，避免自研 fixed 遮罩弹窗。",
+  "fileExtensions": [".vue", ".ts", ".tsx"],
+  "officeTools": false,
+  "helpDoc": "capabilities/vue-dev.md"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "seedId": "xu-voice-native",
+  "tools": [
+    {
+      "toolName": "voice_native_probe",
+      "whenToUse": "用户要装离线语音 / Sherpa ASR / Kokoro TTS / 一键下载安装时，先探测 XU_HOME/voice-engines/native。",
+      "steps": [
+        "调用 voice_native_probe（或设置页「一键安装离线语音」）",
+        "向用户说明 asrReady/ttsReady、warnings（如缺 espeak-ng）、约 250MB 与磁盘提示",
+        "voice_native_install：下 Zipformer CTC ASR + kokoro-v1.0.int8.onnx + voices-v1.0.bin",
+        "轮询 voice_native_status；监听 xu:voice-native-progress",
+        "装完刷新引擎状态，勿假 ready"
+      ],
+      "forbid": [
+        "派员工闲聊代替安装",
+        "使用不存在的 sherpa-onnx-rs / tts-rs 0.5",
+        "默认装 CosyVoice 或 v1.1-zh 权重当 Kokoro",
+        "向用户甩裸 URL 堆栈",
+        "改用户全局 ~/.cargo/config.toml"
+      ]
+    }
+  ]
+}

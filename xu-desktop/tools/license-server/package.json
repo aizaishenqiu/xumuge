@@ -1,0 +1,10 @@
+{
+  "name": "xu-license-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "issue-dev": "node scripts/issue-license.mjs"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "xu-design-mcp-bridge",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "stdio MCP PoC: list UI workspace assets for design delivery",
+  "bin": {
+    "xu-design-mcp-bridge": "./index.mjs"
+  }
+}

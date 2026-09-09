@@ -1,0 +1,10 @@
+{
+  "name": "xu-mcp-blender-host",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "stdio MCP: Blender background script host (ping/eval/open/save/export)",
+  "bin": {
+    "xu-mcp-blender-host": "./index.mjs"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "office-plus",
+  "name": "Office 增强",
+  "description": "Word/Excel/PPT 写入工具说明与最佳实践",
+  "version": "1.0.0",
+  "agentToolHints": "【Office 能力包】写文档优先 office_write_* 工具：先规划结构再分段写入；表格用行列坐标；保留样式一致性。大文件分块写入，完成后提示用户在工作区查看。",
+  "fileExtensions": [".docx", ".xlsx", ".pptx"],
+  "officeTools": true,
+  "helpDoc": "capabilities/office-plus.md"
+}

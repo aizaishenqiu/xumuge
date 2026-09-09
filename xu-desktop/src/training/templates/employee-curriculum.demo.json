@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "industry": "software",
+  "updatedAt": "2026-09-01T00:00:00.000Z",
+  "activeVersions": {},
+  "entries": [
+    {
+      "id": "role_product-manager_v1_demo",
+      "scope": "role",
+      "roleId": "product-manager",
+      "version": 1,
+      "status": "draft",
+      "title": "岗位模板示例 · 产品经理",
+      "wave": "planning",
+      "knowledgeDocs": [
+        "先对齐用户 Brief 与验收口径，再拆工作包",
+        "跨模块需求先 XU_CROSS_MODULE + XU_NEED_CONFIRM，禁止先写实现"
+      ],
+      "cases": [
+        {
+          "id": "case_demo_1",
+          "title": "标准案例",
+          "input": "用户说：做一个内部订单看板，要能筛选状态并导出 CSV。",
+          "expected": "产出：目标一句话、Must/Won't、验收条目、建议派岗顺序（含产品/前端/后端）。"
+        }
+      ],
+      "counterExamples": [
+        {
+          "id": "counter_demo_1",
+          "title": "禁止做法",
+          "input": "未确认范围就直接让工程师开工写库表。",
+          "expected": "命中时停止：先补齐 Brief 与验收，再派活。"
+        }
+      ],
+      "rubricSpec": {
+        "passScore": 70,
+        "criteria": [
+          {
+            "id": "c1",
+            "title": "验收可检查",
+            "weight": 40,
+            "requirement": "每条验收可对/错判定，无模糊形容词堆砌"
+          },
+          {
+            "id": "c2",
+            "title": "范围边界",
+            "weight": 30,
+            "requirement": "写明本期不做（Won't）与依赖"
+          },
+          {
+            "id": "c3",
+            "title": "派岗可执行",
+            "weight": 30,
+            "requirement": "给出至少两个对口岗位与先后顺序"
+          }
+        ]
+      },
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "taskExample": "用户说：做一个内部订单看板，要能筛选状态并导出 CSV。",
+      "rubric": "对照 Brief 验收；Must/Won't 清晰；派岗顺序可执行"
+    }
+  ]
+}

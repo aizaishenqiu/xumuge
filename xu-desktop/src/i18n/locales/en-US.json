@@ -1,0 +1,55 @@
+{
+  "login": {
+    "title": "Sign in",
+    "usernamePlaceholder": "Username / phone",
+    "passwordPlaceholder": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "register": "Create account",
+    "brandLead": "Sign in to your AI company",
+    "enterpriseLead": "Enterprise: choose local roles",
+    "leaseExpired": "Cloud permissions were not verified for 7 days. Sign in again to refresh access.",
+    "missingCredentials": "Enter username and password",
+    "minimize": "Minimize",
+    "close": "Close"
+  },
+  "nav": {
+    "home": "Home",
+    "office": "Office",
+    "projects": "Projects",
+    "monitor": "On duty",
+    "contacts": "Chats",
+    "team": "Team",
+    "agency": "Roles",
+    "memory": "Memory",
+    "connections": "Connections",
+    "settings": "Settings",
+    "feedback": "Bug reports",
+    "help": "Help",
+    "profile": "Profile"
+  },
+  "titleBar": {
+    "home": "Home",
+    "office": "Office",
+    "team": "Team",
+    "agency": "Roles",
+    "memory": "Memory",
+    "connections": "Connections",
+    "settings": "Settings",
+    "feedback": "Bug reports",
+    "onboarding": "Onboarding",
+    "ide": "IDE",
+    "canvas": "Canvas"
+  },
+  "settings": {
+    "uiLanguage": "UI language",
+    "uiLanguageDesc": "Navigation, sign-in, and other shell labels (default: Simplified Chinese)",
+    "localeZhCN": "简体中文",
+    "localeEnUS": "English",
+    "userAddress": "How the assistant addresses you",
+    "userAddressDesc": "Used in chat and dispatch replies (default: 您 / formal you)"
+  },
+  "app": {
+    "preparing": "Preparing {brand}…"
+  }
+}

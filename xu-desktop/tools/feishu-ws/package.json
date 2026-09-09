@@ -1,0 +1,12 @@
+{
+  "name": "xu-feishu-ws",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "xu-feishu-ws": "./index.mjs"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.55.0"
+  }
+}

@@ -1,0 +1,3 @@
+# 忽略预下载的 sherpa 原生库（体积大，不进 git）
+*
+!.gitignore

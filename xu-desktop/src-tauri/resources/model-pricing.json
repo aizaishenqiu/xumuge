@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-23",
+  "presets": {
+    "local": {
+      "inputPerMTokCny": 0,
+      "outputPerMTokCny": 0,
+      "cacheReadPerMTokCny": 0
+    },
+    "deepseek-v4-flash": {
+      "inputPerMTokCny": 0.14,
+      "outputPerMTokCny": 0.28,
+      "cacheReadPerMTokCny": 0.014,
+      "peak": {
+        "inputPerMTokCny": 0.16,
+        "outputPerMTokCny": 0.32,
+        "cacheReadPerMTokCny": 0.016,
+        "hoursLocal": "09:00-23:00"
+      },
+      "offPeak": {
+        "inputPerMTokCny": 0.1,
+        "outputPerMTokCny": 0.2,
+        "cacheReadPerMTokCny": 0.01,
+        "hoursLocal": "23:00-09:00"
+      }
+    },
+    "deepseek-v4-pro": {
+      "inputPerMTokCny": 0.55,
+      "outputPerMTokCny": 2.19,
+      "cacheReadPerMTokCny": 0.055
+    },
+    "openai-gpt-5-mini": {
+      "inputPerMTokCny": 0.25,
+      "outputPerMTokCny": 2.0,
+      "cacheReadPerMTokCny": 0.025
+    },
+    "openai-gpt-5.6": {
+      "inputPerMTokCny": 1.75,
+      "outputPerMTokCny": 14.0,
+      "cacheReadPerMTokCny": 0.175
+    },
+    "anthropic-sonnet-5": {
+      "inputPerMTokCny": 2.16,
+      "outputPerMTokCny": 10.8,
+      "cacheReadPerMTokCny": 0.216
+    },
+    "gemini-3-flash": {
+      "inputPerMTokCny": 0.36,
+      "outputPerMTokCny": 2.16,
+      "cacheReadPerMTokCny": 0.036
+    },
+    "qwen-3.8-max": {
+      "inputPerMTokCny": 0.72,
+      "outputPerMTokCny": 2.88,
+      "cacheReadPerMTokCny": 0.072
+    },
+    "glm-5": {
+      "inputPerMTokCny": 0.72,
+      "outputPerMTokCny": 2.88,
+      "cacheReadPerMTokCny": 0.072
+    },
+    "moonshot-v1-8k": {
+      "inputPerMTokCny": 1.08,
+      "outputPerMTokCny": 1.08,
+      "cacheReadPerMTokCny": 0.108
+    }
+  }
+}

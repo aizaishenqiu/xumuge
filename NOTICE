@@ -1,0 +1,33 @@
+Virmoor / 虚募阁 Open Source Staging
+Copyright 2026 qiuye <yjk150@qq.com>
+
+This product includes software developed for Virmoor (虚募阁).
+
+License
+-------
+This open-source staging tree is licensed under the GNU Affero General Public
+License version 3 (AGPL-3.0). See LICENSE.
+
+If you modify the Program and convey it (including offering the modified
+Program as a service over a network), AGPL-3.0 requires you to provide the
+Corresponding Source to users interacting with it remotely (see AGPL §13).
+
+Trademarks
+----------
+"虚募阁", "Virmoor", and related logos are trademarks of their respective owners.
+AGPL-3.0 does **not** grant trademark rights.
+
+What is open here
+-----------------
+- Desktop runtime sources under `xu-desktop/` (allowlisted export)
+- Demo role Markdown: `xu-desktop/role-packs-src/zh-virmoon` (~461 non-market roles)
+- Short `demo-skills/` Skill samples
+- Bilingual notices and developer docs in this directory
+
+Still reserved / closed
+-----------------------
+Commercial `zh-CN-virmoor` role trees, market-origin roles, production secrets,
+code-signing certificates, the official website, and Go API / admin backends
+are **not** part of this open-source tree.
+
+Third-party notices for dependencies appear in the respective source trees.

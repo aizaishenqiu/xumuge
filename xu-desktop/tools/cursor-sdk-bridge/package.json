@@ -1,0 +1,10 @@
+{
+  "name": "xu-cursor-sdk-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cursor SDK sidecar for Virmoor encoding drive",
+  "dependencies": {
+    "@cursor/sdk": "^1.0.30"
+  }
+}

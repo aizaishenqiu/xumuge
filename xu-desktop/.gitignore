@@ -1,0 +1,99 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+dist-ssr/
+dist/role-packs/
+
+# Vite 缓存
+.vite/
+
+# TypeScript 构建信息
+*.tsbuildinfo
+
+# Tauri 构建产物
+src-tauri/target/
+src-tauri/gen/
+
+# Windows 本机自签证书（由 scripts/setup-windows-signing.ps1 生成）
+src-tauri/certificates/
+src-tauri/tauri.windows.conf.json
+
+# Local cargo build-script stub / wrapper binaries (built by prepare:signing)
+scripts/cargo-build-script-stub.exe
+scripts/rustc-sign-wrapper.exe
+scripts/_stub_main.rs
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.production.local
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+
+# 运行时数据
+*.pid
+*.seed
+
+# 临时文件
+.tmp/
+.temp/
+temp/
+.codebase-memory/
+spike/
+
+# 商业插件源与产物（即使 private-full 也默认不入库；公开仓必须保持拦截）
+commercial-plugins-src/
+dist/commercial/
+*.foubiz
+
+# 真实训练包/样本禁止进入公开仓；仅 demo 数据可由单独策略白名单
+*.foutrain
+*.foutrain.json
+training-data/
+
+# 岗位数据包 — private-full 私有仓（fou.repo-policy.json）可入库；公开仓请改回 public-oss 并恢复下列忽略规则
+# role-packs-src/
+# *.xupack
+# !resources/role-packs/demo.zh-CN.xupack
+# resources/role-packs/dev.full.zh-CN.xupack
+.cache/agency-agents/
+.cache/agency-zh/
+.cache/agency-zh-work/
+.cache/*-out.txt
+.cache/*.txt
+# src/office/agencyCatalog.generated.json
+# tools/license-server/data/
+# tools/license-server/.env
+
+# 构建检查产物
+src-tauri/target-check/
+
+# --- open-source export (public-oss) ---
+# --- open-source export (public-oss) ---
+# zh-virmoon demo MD is allowed (non-market ~461); do not ignore the tree
+*.xupack
+!resources/role-packs/demo.zh-CN.xupack
+resources/role-packs/dev.full.zh-CN.xupack
+resources/role-packs/full.zh-CN.xupack
+.env.development
+.env.production
+.env.signing.local
+

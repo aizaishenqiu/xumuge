@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "items": [
+    { "id": "software", "label": "软件研发", "icon": "code-box-line" },
+    { "id": "engineering", "label": "工程研发", "icon": "cpu-line" },
+    { "id": "design", "label": "创意设计", "icon": "palette-line" },
+    { "id": "product", "label": "产品", "icon": "product-hunt-line" },
+    { "id": "marketing", "label": "市场运营", "icon": "megaphone-line" },
+    { "id": "finance", "label": "金融数据", "icon": "money-cny-circle-line" },
+    { "id": "education", "label": "教育", "icon": "book-open-line" },
+    { "id": "healthcare", "label": "医疗健康", "icon": "heart-pulse-line" },
+    { "id": "consulting", "label": "咨询", "icon": "briefcase-line" },
+    { "id": "operations", "label": "内部运营", "icon": "settings-3-line" },
+    { "id": "general", "label": "通用办公", "icon": "building-line" }
+  ]
+}

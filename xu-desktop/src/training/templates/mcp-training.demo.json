@@ -1,0 +1,169 @@
+{
+  "version": 3,
+  "updatedAt": "2026-09-01T00:00:00.000Z",
+  "tools": [
+    {
+      "toolName": "mcp__demo__search_docs",
+      "version": 1,
+      "status": "draft",
+      "priority": 3,
+      "boundRoles": ["product-manager"],
+      "whenToUse": "需要检索产品/接口文档、确认字段含义时",
+      "antiPatterns": "不要用此工具读取密钥、.env 或大体积二进制",
+      "example": "{\"query\":\"订单状态枚举\"}",
+      "notes": "参数里的密钥请写 ${TOKEN_ENV}，不要写真实 Key",
+      "workflowSteps": [
+        "确认用户问题关键词",
+        "调用检索并摘录来源",
+        "用摘录回答，标明不确定项"
+      ],
+      "playbookSteps": [
+        {
+          "id": "step_1",
+          "order": 1,
+          "toolName": "mcp__demo__search_docs",
+          "parameterTemplate": "{\"query\":\"{{关键词}}\",\"token\":\"${TOKEN_ENV}\"}",
+          "trigger": "需要检索文档时",
+          "failureRecovery": "缩小查询词后重试；仍失败则 XU_NEED_CONFIRM"
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "sc_demo_1",
+          "title": "查字段含义",
+          "userIntent": "订单 status=3 是什么意思？",
+          "toolChain": ["mcp__demo__search_docs"],
+          "expectedOutcome": "给出文档定义与引用路径"
+        }
+      ]
+    },
+    {
+      "toolName": "mcp__demo__list_tables",
+      "version": 1,
+      "status": "draft",
+      "priority": 2,
+      "boundRoles": [],
+      "whenToUse": "需要了解库表结构、列名时",
+      "antiPatterns": "禁止在生产库执行写操作；本工具只读结构",
+      "example": "{\"schema\":\"public\"}",
+      "notes": "仅作结构探查",
+      "workflowSteps": ["确认环境只读", "列出表", "摘要关键列"],
+      "playbookSteps": [
+        {
+          "id": "step_1",
+          "order": 1,
+          "toolName": "mcp__demo__list_tables",
+          "parameterTemplate": "{\"schema\":\"{{schema}}\"}",
+          "trigger": "需要库表结构时",
+          "failureRecovery": "检查连接与权限后重试"
+        }
+      ],
+      "scenarios": []
+    },
+    {
+      "toolName": "mcp__inbox__read_ticket",
+      "version": 1,
+      "status": "draft",
+      "priority": 2,
+      "boundRoles": ["customer-support", "support"],
+      "whenToUse": "本机 inbox/ 下有外部导出的客服工单 JSON/CSV，需要起草回复时",
+      "antiPatterns": "不要读取含密钥或完整客户隐私的原始导出；只摘录问题与订单号",
+      "example": "{\"path\":\"inbox/tickets-2026-09-02.json\"}",
+      "notes": "半自动：导出 → MCP 读文件 → 员工起草 → 企微客服确认发送",
+      "workflowSteps": [
+        "确认 inbox 文件路径与格式",
+        "读取并摘要客户问题",
+        "生成 200 字内回复草稿供人工确认"
+      ],
+      "playbookSteps": [
+        {
+          "id": "step_1",
+          "order": 1,
+          "toolName": "mcp__inbox__read_ticket",
+          "parameterTemplate": "{\"path\":\"inbox/{{文件名}}\"}",
+          "trigger": "用户提到工单导出或 inbox 文件夹",
+          "failureRecovery": "请用户确认文件路径；仍失败则 XU_NEED_CONFIRM"
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "sc_kf_1",
+          "title": "工单导出起草",
+          "userIntent": "inbox 里有个 JSON 工单，帮我写回复",
+          "toolChain": ["mcp__inbox__read_ticket"],
+          "expectedOutcome": "给出可确认的客服回复草稿，不自动发送"
+        }
+      ]
+    },
+    {
+      "toolName": "mcp__design-delivery__probe_design_apps",
+      "version": 1,
+      "status": "draft",
+      "priority": 3,
+      "boundRoles": ["design-", "ui-", "marketing-"],
+      "whenToUse": "批导出前确认本机是否已安装 Photoshop 或 CorelDRAW",
+      "antiPatterns": "不要用此工具代替人工精修图层；不键鼠点设计软件菜单",
+      "example": "{}",
+      "notes": "仅探测，不执行脚本",
+      "workflowSteps": ["调用探测", "向老板说明是否可跑脚本", "无 PS 则改手工导出"],
+      "playbookSteps": [
+        {
+          "id": "step_1",
+          "order": 1,
+          "toolName": "mcp__design-delivery__probe_design_apps",
+          "parameterTemplate": "{}",
+          "trigger": "需要批导出 UI 资产前",
+          "failureRecovery": "提示老板本地安装 PS/Corel 或改手工验收"
+        }
+      ],
+      "scenarios": []
+    },
+    {
+      "toolName": "mcp__design-delivery__generate_and_run_ps_export",
+      "version": 1,
+      "status": "draft",
+      "priority": 1,
+      "boundRoles": ["design-", "ui-"],
+      "whenToUse": "UI 目录有 PSD 源稿，需要批导出 PNG 到 UI/export 且老板已同意",
+      "antiPatterns": "禁止无审批执行；禁止对 PS 窗口做坐标点击",
+      "example": "{\"relativePath\":\"UI/scripts/export_batch.jsx\"}",
+      "notes": "须逐步审批；执行记录写入 qa 审计",
+      "workflowSteps": [
+        "list_ui_assets 确认 PSD",
+        "probe_design_apps",
+        "老板审批后 generate_and_run_ps_export",
+        "write_export_notes 更新说明"
+      ],
+      "playbookSteps": [
+        {
+          "id": "step_1",
+          "order": 1,
+          "toolName": "mcp__design-delivery__list_ui_assets",
+          "parameterTemplate": "{}",
+          "trigger": "批导出前",
+          "failureRecovery": "请设计岗补充 UI 源稿"
+        },
+        {
+          "id": "step_2",
+          "order": 2,
+          "toolName": "mcp__design-delivery__generate_and_run_ps_export",
+          "parameterTemplate": "{\"relativePath\":\"UI/scripts/export_batch.jsx\"}",
+          "trigger": "老板确认批导出",
+          "failureRecovery": "改 generate_ps_export_script 只落盘，请老板手工运行"
+        }
+      ],
+      "scenarios": [
+        {
+          "id": "sc_design_1",
+          "title": "PSD 批导出 PNG",
+          "userIntent": "把 UI 里的 PSD 都导出成 PNG",
+          "toolChain": [
+            "mcp__design-delivery__list_ui_assets",
+            "mcp__design-delivery__generate_and_run_ps_export"
+          ],
+          "expectedOutcome": "UI/export 下出现 PNG，并更新导出说明"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "bundle": {
+    "publisher": "Virmoor (local test)",
+    "windows": {
+      "certificateThumbprint": "REPLACE_AFTER_PNPM_SETUP_SIGNING",
+      "digestAlgorithm": "sha256"
+    }
+  }
+}

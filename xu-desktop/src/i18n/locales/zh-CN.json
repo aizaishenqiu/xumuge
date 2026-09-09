@@ -1,0 +1,55 @@
+{
+  "login": {
+    "title": "账号登录",
+    "usernamePlaceholder": "用户名 / 手机号",
+    "passwordPlaceholder": "密码",
+    "submit": "登 录",
+    "submitting": "登录中…",
+    "register": "注册账号",
+    "brandLead": "登录后进入你的 AI 公司",
+    "enterpriseLead": "企业账号：选择本机角色",
+    "leaseExpired": "云端权限已超过 7 天未校验，请重新登录以拉取最新权限。",
+    "missingCredentials": "请输入账号和密码",
+    "minimize": "最小化",
+    "close": "关闭"
+  },
+  "nav": {
+    "home": "首页",
+    "office": "办公室",
+    "projects": "项目",
+    "monitor": "在岗",
+    "contacts": "往来",
+    "team": "团队",
+    "agency": "岗位库",
+    "memory": "记忆",
+    "connections": "连接",
+    "settings": "设置",
+    "feedback": "反馈",
+    "help": "帮助",
+    "profile": "个人中心"
+  },
+  "titleBar": {
+    "home": "首页",
+    "office": "办公室",
+    "team": "团队",
+    "agency": "岗位库",
+    "memory": "记忆",
+    "connections": "连接",
+    "settings": "设置",
+    "feedback": "反馈",
+    "onboarding": "引导",
+    "ide": "IDE",
+    "canvas": "Canvas"
+  },
+  "settings": {
+    "uiLanguage": "界面语言",
+    "uiLanguageDesc": "切换导航、登录页等基础界面文案（默认简体中文）",
+    "localeZhCN": "简体中文",
+    "localeEnUS": "English",
+    "userAddress": "模型称呼",
+    "userAddressDesc": "对话与派活回复时如何称呼你（默认「您」，如：张总、老板）"
+  },
+  "app": {
+    "preparing": "正在准备{brand}…"
+  }
+}

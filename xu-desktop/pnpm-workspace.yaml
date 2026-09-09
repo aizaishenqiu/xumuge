@@ -1,0 +1,6 @@
+# pnpm project settings (not a multi-package workspace)
+allowBuilds:
+  core-js: true
+  es5-ext: true
+  esbuild: true
+  vue-demi: true

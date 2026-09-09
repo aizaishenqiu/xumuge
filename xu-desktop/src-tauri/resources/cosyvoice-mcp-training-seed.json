@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "seedId": "xu-cosyvoice-install",
+  "tools": [
+    {
+      "toolName": "cosyvoice_probe",
+      "whenToUse": "用户要安装 CosyVoice / 戏剧情绪本地 TTS / 声音扩展时，先探测本机门槛与缺失依赖。",
+      "steps": [
+        "调用 cosyvoice_probe（或设置页协助安装）",
+        "向用户说明 blockers / warnings / missingDeps",
+        "询问安装盘与模型源（ModelScope 优先），禁止未确认自选系统盘",
+        "cosyvoice_plan 展示磁盘分项与耗时，用户勾选已知悉",
+        "cosyvoice_ensure_deps：Miniconda 静默、python3.10、pynini；Git/MSVC 缺失则说明需用户先装",
+        "cosyvoice_install：clone → pip → ModelScope 仅 CosyVoice2-0.5B → 冒烟 → phase=ready",
+        "轮询 cosyvoice_status"
+      ],
+      "forbid": [
+        "跳过探测直接装",
+        "依赖未齐标 ready",
+        "向用户展示裸 URL 堆栈",
+        "停在 awaiting_agent 假装完成"
+      ]
+    }
+  ]
+}

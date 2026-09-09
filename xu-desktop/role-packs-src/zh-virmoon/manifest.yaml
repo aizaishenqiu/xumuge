@@ -1,0 +1,16 @@
+{
+  "locale": "zh-virmoon",
+  "version": 3,
+  "packId": "virmoor-roles-demo-zh-virmoon",
+  "roleCount": 461,
+  "splitAt": "2026-08-24T10:41:17.244Z",
+  "source": "role-packs-src\\_archive\\专家目录_全集_1222条.md",
+  "composition": {
+    "zh-virmoon-oss": 461,
+    "market": 0
+  },
+  "orphanSlugsKept": 0,
+  "notes": "Open-source demo locale zh-virmoon: non-market subset from private zh-kimi (~461). Market roles excluded.",
+  "exportedAt": "2026-09-09T04:45:11.990Z",
+  "privateSourceLocale": "zh-kimi"
+}

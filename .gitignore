@@ -1,0 +1,45 @@
+# Never commit secrets or commercial assets into the open-source staging tree
+.env
+.env.*
+!.env.example
+!.env.production.example
+*.pem
+*.key
+*.p12
+*.pfx
+certificates/
+**/certificates/
+
+# Built packs gitignored; zh-virmoon demo Markdown under xu-desktop/role-packs-src/ is allowed
+*.xupack
+*.foubiz
+*.foutrain
+commercial-plugins-src/
+training-data/
+
+# Build / deps
+node_modules/
+dist/
+**/target/
+*.exe
+!xu-desktop/src-tauri/bin/rg.exe
+*.msi
+*.dmg
+*.AppImage
+
+# Placeholder pack created by oss-unsigned build — do not publish as commercial
+xu-desktop/resources/role-packs/full.zh-CN.xupack
+xu-desktop/src-tauri/tauri.windows.conf.json
+
+# Local / runtime
+.DS_Store
+Thumbs.db
+*.log
+.xu/
+xu.db
+
+# --- open-source export ---
+# Ignore accidental copies of private monorepo roots inside this staging folder
+/server/
+/web/
+# Keep xu-desktop/ and demo-skills/

@@ -1,0 +1,70 @@
+{
+  "contentVersionDefault": "2026.09.1",
+  "skus": [
+    {
+      "id": "demo-zh-CN",
+      "packId": "virmoor-roles-demo-zh-CN",
+      "locale": "zh-CN-virmoor",
+      "demo": true,
+      "out": "resources/role-packs/demo.zh-CN.xupack",
+      "slugs": [
+        "xu-vue-foucui-engineer",
+        "design-brand-guardian",
+        "product-manager",
+        "engineering-backend-architect",
+        "business-strategist"
+      ]
+    },
+    {
+      "id": "full-zh-CN-virmoor",
+      "packId": "virmoor-roles-zh-CN",
+      "locale": "zh-CN-virmoor",
+      "demo": true,
+      "out": "resources/role-packs/full.zh-CN.xupack",
+      "filter": "all",
+      "skipQualityGate": true,
+      "note": "试用阶段内嵌安装包；亦拷贝至 server/public/uploads/role-packs/ 供更新下载"
+    },
+    {
+      "id": "legacy-full-zh-CN",
+      "packId": "hermes-roles-zh-CN",
+      "locale": "zh-CN",
+      "demo": true,
+      "out": "dist/role-packs/legacy-roles-zh-CN.xupack",
+      "filter": "all",
+      "skipQualityGate": true,
+      "note": "旧版全量包；仅后端托管，登录后临时链下载"
+    },
+    {
+      "id": "industry-software-zh-CN",
+      "packId": "hermes-roles-industry-software-zh-CN",
+      "locale": "zh-CN",
+      "demo": false,
+      "out": "dist/role-packs/hermes-roles-industry-software-zh-CN.xupack",
+      "divisions": [
+        "engineering",
+        "software-company",
+        "product",
+        "project-management",
+        "testing",
+        "security"
+      ]
+    },
+    {
+      "id": "industry-design-zh-CN",
+      "packId": "hermes-roles-industry-design-zh-CN",
+      "locale": "zh-CN",
+      "demo": false,
+      "out": "dist/role-packs/hermes-roles-industry-design-zh-CN.xupack",
+      "divisions": ["design"]
+    },
+    {
+      "id": "industry-growth-zh-CN",
+      "packId": "hermes-roles-industry-growth-zh-CN",
+      "locale": "zh-CN",
+      "demo": false,
+      "out": "dist/role-packs/hermes-roles-industry-growth-zh-CN.xupack",
+      "divisions": ["marketing", "paid-media", "sales"]
+    }
+  ]
+}

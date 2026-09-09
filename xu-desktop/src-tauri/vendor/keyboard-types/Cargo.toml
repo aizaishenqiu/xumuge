@@ -1,0 +1,41 @@
+# Vendored keyboard-types 0.7.0 — LTO-safe serde (no bitflags/serde feature).
+# Upstream: https://github.com/pyfisch/keyboard-types
+# @updated 2026-09-01 qiuye — thin LTO 下 bitflags/serde derive 会炸，改用手动 Serialize/Deserialize
+
+[package]
+edition = "2021"
+rust-version = "1.60"
+name = "keyboard-types"
+version = "0.7.0"
+authors = ["Pyfisch <pyfisch@posteo.org>"]
+description = "Contains types to define keyboard related events. (xumuge vendor: LTO-safe serde)"
+readme = "README.md"
+keywords = [
+    "keyboard",
+    "input",
+    "event",
+    "webdriver",
+]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/pyfisch/keyboard-types"
+
+[dependencies.bitflags]
+version = "2"
+
+[dependencies.serde]
+version = "1.0.0"
+features = ["derive"]
+optional = true
+
+[dependencies.unicode-segmentation]
+version = "1.2.0"
+optional = true
+
+[features]
+default = [
+    "serde",
+    "webdriver",
+]
+# 故意不用 bitflags/serde：与 thin/fat LTO 组合时 serde derive 展开会报 expected identifier
+serde = ["dep:serde"]
+webdriver = ["unicode-segmentation"]

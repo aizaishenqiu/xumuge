@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "product",
+      "label": "产品",
+      "icon": "product-hunt-line",
+      "positions": [
+        { "id": "product-manager", "label": "产品经理" },
+        { "id": "product-owner", "label": "产品负责人" },
+        { "id": "business-analyst", "label": "业务分析师" }
+      ]
+    },
+    {
+      "id": "engineering",
+      "label": "研发工程",
+      "icon": "code-box-line",
+      "positions": [
+        { "id": "frontend-engineer", "label": "前端工程师" },
+        { "id": "backend-engineer", "label": "后端工程师" },
+        { "id": "fullstack-engineer", "label": "全栈工程师" },
+        { "id": "architect", "label": "架构师" },
+        { "id": "devops-engineer", "label": "运维工程师" }
+      ]
+    },
+    {
+      "id": "design",
+      "label": "设计",
+      "icon": "palette-line",
+      "positions": [
+        { "id": "ui-designer", "label": "UI 设计师" },
+        { "id": "ux-architect", "label": "UX 架构师" },
+        { "id": "brand-designer", "label": "品牌设计师" }
+      ]
+    },
+    {
+      "id": "qa",
+      "label": "测试质量",
+      "icon": "bug-line",
+      "positions": [
+        { "id": "qa-engineer", "label": "测试工程师" },
+        { "id": "qa-lead", "label": "质量负责人" }
+      ]
+    },
+    {
+      "id": "management",
+      "label": "项目管理",
+      "icon": "team-line",
+      "positions": [
+        { "id": "project-manager", "label": "项目经理" },
+        { "id": "scrum-master", "label": "敏捷教练" }
+      ]
+    },
+    {
+      "id": "finance",
+      "label": "财务",
+      "icon": "money-cny-circle-line",
+      "positions": [
+        { "id": "cost-accountant", "label": "成本会计" },
+        { "id": "financial-analyst", "label": "财务分析师" }
+      ]
+    },
+    {
+      "id": "marketing",
+      "label": "市场",
+      "icon": "megaphone-line",
+      "positions": [
+        { "id": "marketing-manager", "label": "市场经理" },
+        { "id": "content-operator", "label": "内容运营" }
+      ]
+    },
+    {
+      "id": "support",
+      "label": "支持服务",
+      "icon": "customer-service-line",
+      "positions": [
+        { "id": "support-engineer", "label": "技术支持" },
+        { "id": "meeting-scribe", "label": "会议书记员" }
+      ]
+    }
+  ]
+}

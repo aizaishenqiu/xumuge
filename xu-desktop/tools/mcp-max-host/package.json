@@ -1,0 +1,10 @@
+{
+  "name": "xu-mcp-max-host",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "stdio MCP: 3ds Max batch script host (ping/eval/open/save/export)",
+  "bin": {
+    "xu-mcp-max-host": "./index.mjs"
+  }
+}
