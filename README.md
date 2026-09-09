@@ -19,8 +19,12 @@
 |------|------|
 | [README.zh-CN.md](./README.zh-CN.md) | 完整中文介绍（含详细功能） |
 | [README.en.md](./README.en.md) | Full English docs |
-| [DEVELOPING.md](./DEVELOPING.md) | 开发构建 |
+| [wiki/Home.md](./wiki/Home.md) | **详细开发代码说明（Wiki）** |
+| [DEVELOPING.md](./DEVELOPING.md) | 开发入口 |
 | [USAGE.md](./USAGE.md) | 使用与打包 |
 | [OPEN_SOURCE.md](./OPEN_SOURCE.md) | 开源模式 |
 | [DISCLAIMER.md](./DISCLAIMER.md) | 免责声明 |
 | [LICENSE](./LICENSE) | AGPL-3.0 |
+
+Gitee Wiki：https://gitee.com/jiukakeji/xumuge/wikis  
+**QQ 群：`1102740387`**
