@@ -4,6 +4,8 @@ Virmoor / 虚募阁 open-source staging · 中英对照
 
 社区 QQ 群：**1102740387**
 
+完整中文介绍：[README.zh-CN.md](./README.zh-CN.md) · English：[README.en.md](./README.en.md)
+
 ---
 
 ## 中文
