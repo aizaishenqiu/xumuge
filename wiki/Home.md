@@ -25,6 +25,11 @@
 
 ## 30 秒上手
 
+**最终用户（安装包）：**  
+打开 [Release · 虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF)，下载附件 **`虚募阁_1.0.2_x64-setup.exe`**。
+
+**开发者：**
+
 ```bash
 git clone https://gitee.com/jiukakeji/xumuge.git
 cd xumuge/xu-desktop

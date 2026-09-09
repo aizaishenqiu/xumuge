@@ -3,6 +3,8 @@
 Virmoor / 虚募阁 open-source staging · 中英对照  
 QQ 群：**1102740387** · License: **AGPL-3.0**
 
+**下载安装包（Windows）：** [Release · 虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF) → 附件 **`虚募阁_1.0.2_x64-setup.exe`**
+
 更完整的开发流程见 [DEVELOPING.md](./DEVELOPING.md)。
 
 ---
