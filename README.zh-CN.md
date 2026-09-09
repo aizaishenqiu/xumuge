@@ -14,22 +14,21 @@
 | 官网 | https://xumuge.com |
 | 许可 | [AGPL-3.0](./LICENSE) · [NOTICE](./NOTICE) |
 | 免责声明 | [DISCLAIMER.md](./DISCLAIMER.md) |
-| **Windows 安装包** | [Release · 虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF) → 附件 **`虚募阁_1.0.2_x64-setup.exe`** |
+| **Windows 安装包** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe)（Gitee 直链） |
 
 ### 下载安装（Windows）
 
-开源预览安装包（Gitee Release 附件）：
+开源预览安装包（Gitee Release 直链）：
 
 | 项目 | 链接 |
 |------|------|
-| **发行版页面** | [虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF) |
-| **安装包附件** | **`虚募阁_1.0.2_x64-setup.exe`**（在上述页面点击 Download） |
+| **安装包直链** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) |
 
 > 该安装包为开源预览构建，可能未做商业代码签名；Windows 可能提示未知发布者，属预期现象。亦可对照官网 https://xumuge.com 。
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![QQ Group](https://img.shields.io/badge/QQ群-1102740387-12B7F5)](#社区与联系)
-[![Download](https://img.shields.io/badge/Download-1.0.2%20setup.exe-brightgreen)](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF)
+[![Download](https://img.shields.io/badge/Download-1.0.2%20setup.exe-brightgreen)](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe)
 [![status](https://img.shields.io/badge/status-早期预览-orange)](DISCLAIMER.md)
 
 ---
@@ -152,7 +151,7 @@
 
 ## 4. 最终用户快速上手
 
-1. **下载安装包**：打开 [Release · 虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF)，下载附件 **`虚募阁_1.0.2_x64-setup.exe`** 并安装  
+1. **下载安装包**：下载 [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) 并安装  
 2. （可选）官网注册：https://xumuge.com  
 3. 配置模型 API（三脑）后：先用【问询】→【计划】→ 再【智能体】  
 4. 遇到问题进 **QQ 群 `1102740387`** 交流  

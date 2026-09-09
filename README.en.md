@@ -19,15 +19,14 @@ Website: https://xumuge.com
 
 | Item | Link |
 |------|------|
-| **Release page** | [虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF) |
-| **Installer asset** | **`虚募阁_1.0.2_x64-setup.exe`** (Download on that page) |
+| **Installer (direct)** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) |
 | **QQ group** | **`1102740387`** |
 
 Early-preview build; may be unsigned. Website: https://xumuge.com
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![QQ Group](https://img.shields.io/badge/QQ-1102740387-12B7F5)](#community--contact)
-[![Download](https://img.shields.io/badge/Download-1.0.2%20setup.exe-brightgreen)](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF)
+[![Download](https://img.shields.io/badge/Download-1.0.2%20setup.exe-brightgreen)](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe)
 [![status](https://img.shields.io/badge/status-early--preview-orange)](DISCLAIMER.md)
 
 ---
@@ -139,7 +138,7 @@ Company branding, brains, billing, concurrency, guardrails, privacy, security au
 
 ## 4. End-user quick start
 
-1. **Download** [Release · 虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF) → install **`虚募阁_1.0.2_x64-setup.exe`**  
+1. **Download** [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) and install  
 2. Optional: register at https://xumuge.com  
 3. Configure model APIs → Inquiry → Plan → Agent  
 4. Join **QQ group `1102740387`** for help  

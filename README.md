@@ -9,7 +9,7 @@
 
 **社区 QQ 交流群：`1102740387`**（加群请注明：开源 / Virmoor）
 
-**下载安装包：** [Release · 虚募阁一人AI公司桌面端](https://gitee.com/jiukakeji/xumuge/releases/tag/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF) → 附件 **`虚募阁_1.0.2_x64-setup.exe`**
+**下载安装包：** [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe)（Gitee 直链）
 
 **使用范围：** 个人使用不受限制；**禁止**未经授权的商用 SaaS / 付费托管等运营。详见 [README.zh-CN.md](./README.zh-CN.md#使用范围附加约定) · [README.en.md](./README.en.md#use-policy-additional-terms)
 

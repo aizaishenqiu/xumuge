@@ -2,7 +2,8 @@
  * @file 桌面端可改端点：只从此模块读 Vite env（业务文件禁止写死生产 URL）
  * @author qiuye <yjk150@qq.com>
  * @date 2026-09-05
- * @version 1.0.0
+ * @updated 2026-09-09
+ * @version 1.0.1
  * @category Config
  * @algo vite-env-single-source
  */
@@ -38,9 +39,12 @@ export function getStoreUrl(): string {
   return vite("VITE_XU_STORE_URL", "https://xumuge.com/download");
 }
 
-/** 检查更新失败时的官网下载页 */
+/** 检查更新失败时的安装包下载地址（默认同 Gitee 直链） */
 export function getDownloadPageUrl(): string {
-  return vite("VITE_XU_DOWNLOAD_PAGE_URL", getStoreUrl());
+  return vite(
+    "VITE_XU_DOWNLOAD_PAGE_URL",
+    "https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe",
+  );
 }
 
 /** 与 server DOWNLOAD_DESKTOP_SLUG 对齐 */
