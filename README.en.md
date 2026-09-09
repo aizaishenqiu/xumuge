@@ -19,7 +19,9 @@ Website: https://xumuge.com
 
 | Item | Link |
 |------|------|
-| **Installer (direct)** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) |
+| **Installer (Gitee)** | [虚募阁_1.0.2_x64-setup.exe](https://gitee.com/jiukakeji/xumuge/releases/download/%E8%99%9A%E5%8B%9F%E9%98%81%E4%B8%80%E4%BA%BAAI%E5%85%AC%E5%8F%B8%E6%A1%8C%E9%9D%A2%E7%AB%AF/%E8%99%9A%E5%8B%9F%E9%98%81_1.0.2_x64-setup.exe) |
+| **Installer (GitHub)** | [Virmoor_1.0.2_x64-setup.exe](https://github.com/aizaishenqiu/xumuge/releases/download/virmoor-desktop-1.0.2/Virmoor_1.0.2_x64-setup.exe) |
+| **Source** | [Gitee](https://gitee.com/jiukakeji/xumuge) · [GitHub](https://github.com/aizaishenqiu/xumuge) |
 | **QQ group** | **`1102740387`** |
 
 Early-preview build; may be unsigned. Website: https://xumuge.com
