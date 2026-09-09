@@ -1,17 +1,13 @@
-My Hermes Desktop
-Copyright (C) 2026 深圳市玄熵智能科技有限责任公司
-All rights reserved.
+Virmoor / 虚募阁 Desktop (open-source export)
+Copyright 2026 qiuye <yjk150@qq.com>
 
-This product is licensed under the Apache License, Version 2.0.
-You may obtain a copy of the License at:
+This directory is part of the Virmoor open-source staging tree and is licensed
+under the GNU Affero General Public License version 3 (AGPL-3.0).
+See LICENSE in this directory (same as opensource/LICENSE).
 
-    http://www.apache.org/licenses/LICENSE-2.0
+If you modify the Program and convey it (including offering it as a network
+service), AGPL-3.0 requires you to provide the Corresponding Source to users
+interacting with it remotely (see AGPL §13).
 
----
-
-Attribution Requirement (Apache License, Section 4(d)):
-
-Any Derivative Works distributed in Source or Object form must include
-a readable copy of this NOTICE file, preserving the copyright and
-attribution notices of 深圳市玄熵智能科技有限责任公司 (Xuanshang
-Intelligent Technology Co., Ltd., Shenzhen).
+Trademarks "虚募阁" / "Virmoor" are not granted by this license.
+Demo roles: role-packs-src/zh-virmoon (~461). Commercial packs remain closed.
