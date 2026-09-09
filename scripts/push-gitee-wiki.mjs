@@ -38,16 +38,35 @@ for (const name of fs.readdirSync(WIKI_SRC)) {
 
 run(tmp, "git", ["init", "-b", "master"]);
 run(tmp, "git", ["add", "-A"]);
-run(tmp, "git", [
-  "-c",
-  "user.email=yjk150@qq.com",
-  "-c",
-  "user.name=qiuye",
-  "commit",
-  "-m",
-  "Update developer wiki",
-]);
-run(tmp, "git", ["remote", "add", "origin", REMOTE]);
-run(tmp, "git", ["push", "-u", "origin", "master", "--force"]);
+const commitEnv = {
+  ...process.env,
+  GIT_AUTHOR_NAME: "qiuye",
+  GIT_AUTHOR_EMAIL: "yjk150@qq.com",
+  GIT_COMMITTER_NAME: "qiuye",
+  GIT_COMMITTER_EMAIL: "yjk150@qq.com",
+};
+const commit = spawnSync(
+  "git",
+  ["commit", "-m", "Update developer wiki"],
+  { cwd: tmp, stdio: "inherit", shell: false, env: commitEnv },
+);
+if (commit.status !== 0) process.exit(commit.status ?? 1);
+const remoteAdd = spawnSync("git", ["remote", "add", "origin", REMOTE], {
+  cwd: tmp,
+  stdio: "inherit",
+  shell: false,
+});
+if (remoteAdd.status !== 0) process.exit(remoteAdd.status ?? 1);
+const push = spawnSync(
+  "git",
+  ["push", "-u", "origin", "master", "--force"],
+  { cwd: tmp, stdio: "inherit", shell: false },
+);
+if (push.status !== 0) {
+  console.error(
+    "Push failed. Enable Wiki once in Gitee UI: https://gitee.com/jiukakeji/xumuge/wikis",
+  );
+  process.exit(push.status ?? 1);
+}
 console.log("pushed", REMOTE);
 console.log("view:", "https://gitee.com/jiukakeji/xumuge/wikis");
